@@ -1,17 +1,40 @@
-@media (max-width: 575.98px)
+@media only screen and (max-width: 600px)
 
-@media (min-width: 576px) and (max-width: 767.98px) 
-
-@media (min-width: 768px) and (max-width: 991.98px) 
-
-@media (min-width: 992px) and (max-width: 1199.98px) 
-
-@media (min-width: 1200px)
- 
 main {
     display: flex;
 }
 
 aside {
     margin-left: 2%;
-}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+  }
+  
+ div ul {
+    float: left;
+  }
+  
+  ul a {
+    display: block;
+    color:red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul a:hover {
+    background-color: #111;
+  }
+
+  body {
+    background-image: url(Irish Flag.jpg);
+    border-image-width: 100;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    display: flex;
