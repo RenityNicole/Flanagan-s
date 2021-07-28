@@ -1,4 +1,6 @@
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 600px){
+
+}
 
 main {
     display: flex;
@@ -6,14 +8,30 @@ main {
 
 aside {
     margin-left: 2%;
+}
+
+@media screen and (min-width: 700px){
+
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    margin-left: 2%;
+}
 
 .nav {
-    display: flex:
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: green;
+    position: absolute;
+    flex-direction: row;
+    top: auto;
+    
   }
   
  div ul {
@@ -21,47 +39,54 @@ aside {
   }
   
   ul a {
-    display: block;
-    color:red;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    flex-direction: column;
+    justify-content: space-around;
+
   }
   
   ul a:hover {
-    background-color: #111;
+    background-color:whitesmoke;
   }
 
   body {
-    background-image: url(Irish Flag.jpg);
+    background-image: url("Images/Irish Flag.jpg");
     border-image-width: 100;
     background-repeat: no-repeat;
-    background-attachment: :vertical;  
+    background-attachment: fixed;  
     background-size: cover;
+    
+  }
+  
+  article{
     display: flex;
+  }
 
-     .gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
-      }
-      
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
-      
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-      
-      div.desc {
-        padding: 15px;
-        text-align: center;
-      }
+  .gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+  
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
-      div.desc {
-        border: 2px solid red;
-        border-radius: 5px;
-      }
+  div.desc {
+    border: 2px solid red;
+    border-radius: 5px;
+  }
