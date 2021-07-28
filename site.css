@@ -27,18 +27,17 @@ aside {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: green;
+    background-color: brown;
     position: absolute;
-    flex-direction: row;
     top: auto;
     
   }
   
- div ul {
+ li {
     float: left;
   }
   
-  ul a {
+  li a {
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -48,10 +47,11 @@ aside {
 
   }
   
-  ul a:hover {
+  li a:hover {
     background-color:whitesmoke;
   }
-
+  
+ 
   body {
     background-image: url("Images/Irish Flag.jpg");
     border-image-width: 100;
