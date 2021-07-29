@@ -1,57 +1,50 @@
-@media only screen and (max-width: 600px){
-
-}
-
-main {
-    display: flex;
-}
-
-aside {
-    margin-left: 2%;
-}
-
-@media screen and (min-width: 700px){
-
-}
-
-main {
-    display: flex;
-}
-
-aside {
-    margin-left: 2%;
-}
-
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: brown;
-    position: absolute;
-    top: auto;
-    
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
   }
-  
- li {
-    float: left;
-  }
-  
-  li a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    flex-direction: column;
-    justify-content: space-around;
+}
 
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: clear;
+  opacity: 0.5;
   
-  li a:hover {
-    background-color:whitesmoke;
-  }
+
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  opacity: 2.0;
+
+}
   
- 
   body {
     background-image: url("Images/Irish Flag.jpg");
     border-image-width: 100;
@@ -90,3 +83,35 @@ aside {
     border: 2px solid red;
     border-radius: 5px;
   }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+
+    }
+
