@@ -18,6 +18,7 @@ ul {
   overflow: hidden;
   background-color: clear;
   opacity: 0.5;
+  display: inline-flex;
   
 
 }
@@ -60,6 +61,8 @@ li a:hover {
     border: 1px solid #ccc;
     float: inline-start;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   
   }
   
@@ -91,7 +94,7 @@ li a:hover {
     display: none;
     position: fixed;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -120,6 +123,28 @@ h1 {
   text-decoration: none;
   vertical-align: text-bottom;
 
+}
 
+header {
+    display: left;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+
+.button {
+  background-color: #8c8c8c; 
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
