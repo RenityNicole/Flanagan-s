@@ -44,7 +44,8 @@ li a:hover {
   opacity: 2.0;
 
 }
-  
+ 
+
   body {
     background-image: url("Images/Irish Flag.jpg");
     border-image-width: 100;
@@ -61,7 +62,8 @@ li a:hover {
   .gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    float: inline-start;
+    position: static;
   
   }
   
