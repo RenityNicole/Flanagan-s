@@ -55,15 +55,11 @@ li a:hover {
     
   }
   
-  article{
-    display: flex;
-  }
-
   .gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: inline-start;
-    position: static;
+    display: flex;
   
   }
   
@@ -109,11 +105,21 @@ li a:hover {
     text-align: center;
   }
 
-  img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+  
 
-    }
+h1 {
+  text-indent: initial;
+  text-align: center;
+  margin: 0px;
+  
+}
 
+.p {
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  vertical-align: text-bottom;
+
+
+
+}
