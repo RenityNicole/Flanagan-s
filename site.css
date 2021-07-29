@@ -1,114 +1,130 @@
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
+* {
+  box-sizing: border-box;
 }
 
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-ul {
-  list-style-type: none;
+/* Style the body */
+body {
+  font-family: Arial;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: clear;
-  opacity: 0.5;
-  display: inline-flex;
-  
-
+  background-image: url("Images/Irish Flag.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
-li {
-  float: left;
+/* Header/logo Title */
+.header {
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/* Style the top navigation bar */
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background-color: lightgrey;
+  opacity: 0.5;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+
+/* Style the navigation bar links */
+li a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
   border-right:1px solid #bbb;
+}
+
+/* Change color on hover */
+li a:hover {
+  color: orange;
+  opacity: 2.0;
 }
 
 li:last-child {
   border-right: none;
 }
 
-li a {
-  display: block;
-  color: white;
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
-  opacity: 2.0;
-
+div.desc {
+  border: 2px solid red;
+  border-radius: 5px;
 }
- 
 
-  body {
-    background-image: url("Images/Irish Flag.jpg");
-    border-image-width: 100;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    
-  }
-  
-  .gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: inline-start;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  div.desc {
-    border: 2px solid red;
-    border-radius: 5px;
-  }
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .desc {
-    padding: 15px;
-    text-align: center;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: scale-down;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   text-indent: initial;
@@ -117,37 +133,24 @@ h1 {
   
 }
 
-.p {
+p {
   text-align: center;
   display: flex;
   text-decoration: none;
   vertical-align: text-bottom;
-
 }
 
-header {
-    display: left;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
 }
 
-.button {
-  background-color: #8c8c8c; 
-  color: white;
-  padding: 5px;
-  border: 1px solid black;
-
-}
-
-img {
-  width: 600px;
-  height: 500px;
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
 }
 
